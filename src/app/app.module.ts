@@ -5,11 +5,13 @@ import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PolicyDetailsComponent } from './components/policy-details/policy-details.component';
+import { PolicyListComponent } from './components/policy-list/policy-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PolicyDetailsComponent
+    PolicyDetailsComponent,
+    PolicyListComponent
   ],
   imports: [
     BrowserModule,
