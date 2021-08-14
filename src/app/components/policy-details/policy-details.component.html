@@ -1,1 +1,87 @@
 <p>policy-details works!</p>
+<div class="container">
+    <div id="policyDetails">
+        <form (ngSubmit)="processForm()">
+            <div class="form-group row">
+                <label for="Policy ID" class="col-sm-2 col-form-label"><h5>Policy ID</h5></label>
+                <div class="col-sm-10">
+                <input type="number" name="policy_id" class="form-control" [(ngModel)]="policy.policy_id"/>   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Date of purchase" class="col-sm-2 col-form-label"><h5>Date of purchase</h5></label>
+                <div class="col-sm-10">
+                <input type="date" name="dop" class="form-control" [(ngModel)]="policy.dop"/>   
+            </div>
+            </div>
+            <div class="form-group row">
+                <label for="customer_id" class="col-sm-2 col-form-label"><h5>Customer ID</h5></label>
+                <div class="col-sm-10">
+                <input type="text" name="customer_id" class="form-control" [(ngModel)]="policy.customer_id"/>   
+            </div></div>
+            <div class="form-group row">
+                <label for="fuel" class="col-sm-2 col-form-label"><h5>Fuel</h5></label>
+                <div class="col-sm-10">
+                <input type="text" name="fuel" class="form-control" [(ngModel)]="policy.fuel"/>   
+            </div></div>
+            <div class="form-group row">
+                <label for="vehicle_segment" class="col-sm-2 col-form-label"><h5>Vehicle Segment</h5></label>
+                <div class="col-sm-10">
+                <input type="text" name="vehicle_segment" class="form-control" [(ngModel)]="policy.vehicle_segment" />   
+            </div></div>
+            <div class="form-group row">
+                <label for="premium" class="col-sm-2 col-form-label"><h5>Premium</h5></label>
+                <div class="col-sm-10">
+                <input type="number" name="premium" class="form-control" [(ngModel)]="policy.premium"/>   
+            </div></div>
+            <div class="form-group row">
+                <label for="bodily_injury_liability" class="col-sm-2 col-form-label"><h5>Bodily Injury Liability</h5></label>
+                <div class="col-sm-10">
+                <input type="text" name="bodily_injury_liability" class="form-control" [(ngModel)]="policy.bodily_injury_liability"/>   
+            </div></div>
+            <div class="form-group row">
+                <label for="personal_injury_protection" class="col-sm-2 col-form-label"><h5>Personal Injury Protection</h5></label>
+                <div class="col-sm-10">
+                <input type="text" name="personal_injury_protection" class="form-control" [(ngModel)]="policy.personal_injury_protection"/>   
+            </div></div>
+            <div class="form-group row">
+                <label for="property_damage_liability" class="col-sm-2 col-form-label"><h5>Property Damage Liability</h5></label>
+                <div class="col-sm-10">
+                <input type="text" name="property_damage_liability" class="form-control" [(ngModel)]="policy.property_damage_liability"/>   
+            </div></div>
+            <div class="form-group row">
+                <label for="collision" class="col-sm-2 col-form-label"><h5>Collision</h5></label>
+                <div class="col-sm-10">
+                <input type="text" name="collision" class="form-control" [(ngModel)]="policy.collision"/>   
+            </div></div>
+            <div class="form-group row">
+                <label for="comprehensive" class="col-sm-2 col-form-label"><h5>Comprehensive</h5></label>
+                <div class="col-sm-10">
+                <input type="text" name="comprehensive" class="form-control" [(ngModel)]="policy.comprehensive"/>   
+            </div></div>
+            <div class="form-group row">
+                <label for="customer_gender" class="col-sm-2 col-form-label"><h5>Customer Gender</h5></label>
+                <div class="col-sm-10">
+                <input type="text" name="customer_gender" class="form-control" [(ngModel)]="policy.customer_gender"/>   
+            </div></div>
+            <div class="form-group row">
+                <label for="customer_income_group" class="col-sm-2 col-form-label"><h5>Customer Income Group</h5></label>
+                <div class="col-sm-10">
+                <input type="text" name="customer_income_group" class="form-control" [(ngModel)]="policy.customer_income_group"/>   
+            </div></div>
+            <div class="form-group row">
+                <label for="customer_region" class="col-sm-2 col-form-label"><h5>Customer Region</h5></label>
+                <div class="col-sm-10">
+                <input type="text" name="customer_region" class="form-control" [(ngModel)]="policy.customer_region"/>   
+            </div></div>
+            <div class="form-group row">
+                <label for="customer_martial_status" class="col-sm-2 col-form-label"><h5>Customer Martial Status</h5></label>
+                <div class="col-sm-10">
+                <input type="number" name="customer_martial_status" class="form-control" [(ngModel)]="policy.customer_martial_status"/>   
+            </div></div>
+            <div id="sub">
+            <input type="submit" value="Save" class="btn btn-primary" />
+        </div>
+        </form>
+    </div>
+      </div>

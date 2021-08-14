@@ -1,2 +1,47 @@
 <p>policy-list works!</p>
 <h4>Policy List</h4>
+
+<div class="container" id="margin">
+
+    <table class="table table-striped">
+      <thead>
+        <th>Policy ID</th>
+        <th>Date of purchase</th>
+        <th>Customer ID</th>
+        <th>Fuel</th>
+        <th>Vehicle Segment</th>
+        <th>Premium</th>
+        <th>Bodily Injury Liability</th>
+        <th>Personal Injury Protection</th>
+        <th>Property Damage Liability</th>
+        <th>Collision</th>
+        <th>Comprehensive</th>
+        <th>Customer Gender</th>
+        <th>Customer Income Group</th>
+        <th>Customer Region</th>
+        <th>Customer Martial Status</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let policy of policies">
+          <td>{{policy.policy_id}}</td>
+          <td>{{policy.dop}}</td>
+          <td>{{policy.customer_id}}</td>
+          <td>{{policy.fuel}}</td>
+          <td>{{policy.vehicle_segment}}</td>
+          <td>{{policy.premium}}</td>
+          <td>{{policy.bodily_injury_liability}}</td>
+          <td>{{policy.personal_injury_protection}}</td>
+          <td>{{policy.property_damage_liability}}</td>
+          <td>{{policy.collision}}</td>
+          <td>{{policy.comprehensive}}</td>
+          <td>{{policy.customer_gender}}</td>
+          <td>{{policy.customer_income_group}}</td>
+          <td>{{policy.customer_region}}</td>
+          <td>{{policy.customer_martial_status}}</td>
+          <td><button class="btn btn-danger" (click)="deletePolicy(policy)">Delete</button>
+              <button class="btn btn-primary" (click)="updatePolicy(policy)">Edit</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="btn btn-primary" (click)="createPolicy()">New policy</button>
+</div>

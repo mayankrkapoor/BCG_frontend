@@ -17,7 +17,7 @@ export class PolicyDetailsComponent implements OnInit {
   ) { }
 
   message = '';
-  currentPolicy : any;
+  policy : any;
 
   ngOnInit(): void {
     this.message = '';
@@ -28,7 +28,7 @@ export class PolicyDetailsComponent implements OnInit {
     this.policyServie.getById(id)
     .subscribe(
       policy => {
-        this.currentPolicy = policy;
+        this.policy = policy;
         console.log(policy);
       },
       error => {
@@ -38,7 +38,7 @@ export class PolicyDetailsComponent implements OnInit {
   }
 
   updatePolicy(): void {
-    this.policyServie.update(this.currentPolicy.id, this.currentPolicy)
+    this.policyServie.update(this.policy.id, this.policy)
     .subscribe(
       response => {
         console.log(response);
@@ -49,6 +49,10 @@ export class PolicyDetailsComponent implements OnInit {
         this.message = 'Update failed!!';
       }
     )
+  }
+
+  processForm() {
+    console.log('form processed.');
   }
 
 }

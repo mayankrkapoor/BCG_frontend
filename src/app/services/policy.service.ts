@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Policy } from '../models/policy';
 
-const baseUrl = 'http://localhost:8080/api/policy';
+const baseUrl = 'http://localhost:9000/api/policy';
 
 @Injectable({
   providedIn: 'root'
