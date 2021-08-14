@@ -6,18 +6,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PolicyDetailsComponent } from './components/policy-details/policy-details.component';
 import { PolicyListComponent } from './components/policy-list/policy-list.component';
+import { PolicyMetricsComponent } from './components/policy-metrics/policy-metrics.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
     AppComponent,
     PolicyDetailsComponent,
-    PolicyListComponent
+    PolicyListComponent,
+    PolicyMetricsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
