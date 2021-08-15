@@ -8,13 +8,15 @@ import { PolicyDetailsComponent } from './components/policy-details/policy-detai
 import { PolicyListComponent } from './components/policy-list/policy-list.component';
 import { PolicyMetricsComponent } from './components/policy-metrics/policy-metrics.component';
 import { ChartsModule } from 'ng2-charts';
+import { PolicySearchComponent } from './components/policy-search/policy-search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PolicyDetailsComponent,
     PolicyListComponent,
-    PolicyMetricsComponent
+    PolicyMetricsComponent,
+    PolicySearchComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-<p>policy-metrics works!</p>
+<!-- <p>policy-metrics works!</p>
 <div class="chart-wrapper">
     <canvas baseChart 
         [datasets]="lineChartData" 
@@ -9,4 +9,35 @@
         [chartType]="lineChartType" 
         [plugins]="lineChartPlugins">
     </canvas>
+</div> -->
+
+<div class="chart-wrapper">
+    <canvas baseChart 
+    [datasets]="barChartData"
+    [labels]="barChartLabels"
+    [options]="barChartOptions"
+    [plugins]="barChartPlugins"
+    [legend]="barChartLegend"
+    [chartType]="barChartType">
+  </canvas>
+</div>
+
+<div class="chart-wrapper">
+    <canvas baseChart 
+    [data]="doughnutChartData"
+    [labels]="doughnutChartLabels"
+    [chartType]="doughnutChartType">
+  </canvas>
+</div>
+
+
+<div class="chart-wrapper">
+    <canvas baseChart 
+    [data]="pieChartData" 
+    [labels]="pieChartLabels" 
+    [chartType]="pieChartType"
+    [options]="pieChartOptions"
+    [plugins]="pieChartPlugins"
+    [legend]="pieChartLegend">
+  </canvas>
 </div>

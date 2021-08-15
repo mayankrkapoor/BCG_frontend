@@ -12,6 +12,34 @@ export class PolicyService {
 
   constructor(private http : HttpClient) { }
 
+  policy:any;
+  id:any;
+  customerId:any;
+
+  getter() {
+    return this.policy;
+  }
+
+  setter(policy:Policy){
+    this.policy = policy;
+  }
+
+  getId() {
+    return this.id;
+  }
+
+  setId(id:any){
+    this.id = id;
+  }
+
+  getCustomerId(){
+    return this.customerId;
+  }
+
+  setCustomerId(id:any){
+    this.customerId = id;
+  }
+
 
   // retrieve all policies
   getAll() : Observable<Policy[]> {
@@ -31,5 +59,10 @@ export class PolicyService {
   //update policy
   update(id :any, data: any): Observable<any> {
     return this.http.put(`${baseUrl}/${id}`, data);
+  }
+
+  //get policy by fuel type
+  getByFuelType(fuel:any) : Observable<any>{
+    return this.http.get(`${baseUrl}/fuel/${fuel}`);
   }
 }
